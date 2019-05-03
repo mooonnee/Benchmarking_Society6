@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Society6</title>
+	<link rel="stylesheet" type="text/css" href="css/3style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script>
+$(function(){
+	$(".join").mouseover(function(){
+	$("#joinlogin").addClass("on");		
+	});
+	$(".join").mouseout(function(){
+	$("#joinlogin").removeClass("on");				
+	});
+
+	$(".star").mouseover(function(){
+	$("#starform").addClass("on");		
+	});
+	$(".star").mouseout(function(){
+	$("#starform").removeClass("on");				
+	});
+
+	$(".cart").mouseover(function(){
+	$("#cartform").addClass("on");		
+	});
+	$(".cart").mouseout(function(){
+	$("#cartform").removeClass("on");				
+	});
+
+	$("#loading .closebtn").click(function(){
+		$("#loading").css("display","none");
+	});
+	
+	$("#close").click(function(){
+	$("#pop").css("display","none");		
+	});
+
+	
+});
+
+
+</script>
+
+
+</head>
+<body>
+
+<div id="loading">
+	<div class="closebtn">
+			<p></p>
+			<p></p>
+	</div>
+	<div class="formbox">
+		<h2><img src="images/society6logo.png" alt=""></h2>
+		<p class="bring">Bring <strong>amazing art</strong> into your life</p>
+		<h1>Get Free Shipping</h1>
+		<p>on your first order</p>
+		<form>
+			<p><i class="fa fa-envelope" aria-hidden="true"></i><input type="email" placeholder="Email address"></p>
+			<p><button class="btn1">Get Free Shipping</button></p>
+			<p><button class="btn2">I Don't Want Free Shipping</button></p>
+		</form>	
+		<h5>*Discount cannot be combined with other offers.</h5>
+	</div>
+	<div class="graBg"></div>
+</div>
+	<div id="fixedad">
+		<button><a href="#">Get $10</a></button>
+	</div>
+	<div id="event">
+		25% Off Tapestries, Posters + All Wall Art Today with Code ARTNOW
+	</div>
+	<div id="headerbg" >
+		<div id="header" class="cf">
+			<h1><a href="index.html"><img src="images/society6logo.png" alt="logo"</a></h1>
+			<form id="search">
+					<input type="text" size="80" placeholder="   Find somthing great" maxlength="20" class="searchbar">
+					<a href="#"><img src="images/searchicon.jpg" alt="searchicon"></a>
+			</form>
+			<ul id="lnb">
+				<li><a href="#">S6 Blog</a></li>
+				<li><a href="#">Discover Art</a></li>
+				<li class="join"><a href="#">Join l Login</a>
+				<div id="joinlogin">
+					<div id="join">
+						<span class="title">Join Society6</span>
+						<p>Follow your favorite artists, promote their artwork and sell your own.</p>
+						<div class="joinbtn">
+							<a href="Signup/SignUp.html">Sign up</a>
+						</div>
+					</div>
+					<div id="loginform">
+						<p class="title">Login</p>
+							<form id="login">
+								<p>EMAIL ADDRESS</p>
+								<div class="id">
+									<input type="email">
+								</div>
+								<p class="pwtitle">PASSWORD<span>Forgot?</span></p>
+								<div class="pw">
+									<input type="password">
+								</div>
+								<div class="checkbox">
+									<input type="checkbox"/>
+									<p>Remember me on this device</p>
+								</div>
+							</form>
+						<div class="signbtn">
+							<a href="#">Sign in</a>
+						</div>
+						<p>or</p>
+						<div id="sns">
+							<dl>
+								<dt><a href="#"><i class="fab fa-twitter"></i></a></dt>
+								<dd><a href="#">Sign in With Twitter</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="#"><i class="fab fa-facebook-f"></i></a></dt>
+								<dd><a href="#">Connecting using Facebook</a></dd>
+							</dl>
+						</div>
+					</div>
+				</div>
+				</li>
+				<li class="lnbicon star"><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a>
+				<div id="starform">
+					<h3>Nothing on the wishilist?</h3>
+					<h5>That's an easy fix. We'll point you in the right direction.</h5>
+					<p><button>Start Here</button></p>
+				</div>
+				</li>
+				<li class="lnbicon cart"><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+				<div id="cartform">
+					<h3>Your cart is empty...</h3>
+					<h5>..for now. We'll show you where to dive in.</h5>
+					<p><button>Start Here</button></p>
+				</div>
+				</li>
+				
+			</ul>
+		</div>
+		
+	</div>
+	<div id="gnbbg">
+		<ul id="gnb">
+			<li><a href="#">Wall Art</a>
+				<ul class="gnbsub sub1">
+					<li><a href="#">Art Prints</a></li>
+					<li><a href="#">Framed Art Prints</a></li>
+					<li><a href="#">Posters <span>NEW</span></a></li>
+					<li><a href="#">Canvas Prints</a></li>
+					<li><a href="#">Metal Prints</a></li>
+					<li><a href="#">Wall Tapestries</a></li>
+					<li><a href="#">Wall Hangings <span>NEW</span></a></li>
+					<li><a href="#">Wall Murals <span>NEW</span></a></li>
+					<li><a href="#">Wood Wall Art <span>NEW</span></a></li>
+				</ul>
+			</li>
+			<li><a href="WallTapestries/WallTapestries.html">Home Decor</a>
+				<ul class="gnbsub sub2">
+					<li><a href="#">Wall Tapestries</a></li>
+					<li><a href="#">Wallpaper <span>NEW</span></a></li>
+					<li><a href="#">Window Curtains</a></li>
+					<li><a href="#">Wall Clocks</a></li>
+					<li><a href="#">Rugs</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Pillows&Bedding</a>
+				<ul class="gnbsub sub3">
+					<li><a href="#">Throw Pillows</a></li>
+					<li><a href="#">Rectangular Pillows</a></li>
+		 			<li><a href="#">PFloor Pillows</a></li>
+					<li><a href="#">Pillow Shams</a></li>
+					<li><a href="#">Comforters</a></li>
+					<li><a href="#">Duvet Covers</a></li>
+					<li><a href="#">Throw Blankets</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Bath</a>
+				<ul class="gnbsub sub4">
+					<li><a href="#">Shower Curtains</a></li>
+					<li><a href="#">Bath Mats</a></li>
+					<li><a href="#">Hand & Bath Towels</a></li>
+					<li><a href="#">Beach Towels</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tech</a>
+				<ul class="gnbsub sub5">
+					<li><a href="#">iPhone Cases</a></li>
+					<li><a href="#">Clear Cases</a></li>
+					<li><a href="#">Galaxy Cases</a></li>
+					<li><a href="#">Laptop Sleeves</a></li>
+					<li><a href="#">iPhone Skins</a></li>
+					<li><a href="#">Laptop Skins</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Stickers&Stationery</a>
+				<ul class="gnbsub sub6">
+					<li><a href="#">Stickers <span>NEW</span></a></li>
+					<li><a href="#">Notebooks</a></li>
+					<li><a href="#">Stationery Cards</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Apparel</a>
+				<ul class="gnbsub sub7">
+					<li><a href="#">T-Shirts</a></li>
+					<li><a href="#">Leggings</a></li>
+					<li><a href="#">V-Necks</a></li>
+					<li><a href="#">All Over Print Shirts</a></li>
+					<li><a href="#">Long Sleeve Shirts</a></li>
+					<li><a href="#">Hoodies</a></li>
+					<li><a href="#">Tank Tops</a></li>
+					<li><a href="#">Biker Tanks</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tabletop</a>
+				<ul class="gnbsub sub8">
+					<li><a href="#">Coffee Mugs</a></li>
+					<li><a href="#">Travel Mugs</a></li>
+					<li><a href="#">Can Coolers <span>NEW</span></a></li>
+					<li><a href="#">Coasters <span>NEW</span></a></li>
+					<li><a href="#">Cutting Boards <span>NEW</span></a></li>
+					<li><a href="#">Serving Trays <span>NEW</span></a></li>
+				</ul>
+			</li>
+			<li><a href="#">Bags</a>
+				<ul class="gnbsub sub9">
+					<li><a href="#">Tote Bags</a></li>
+					<li><a href="#">Carry-All Pouches</a></li>
+					<li><a href="#">Backpacks</a></li>
+					<li><a href="#">Duffle Bags <span>NEW</span></a></li>
+				</ul>
+			</li>
+			<li><a href="#">Featured</a>
+				<ul class="gnbsub sub10">
+					<li><a href="#">Here’s To Summer</a></li>
+					<li><a href="#">Trending Mandala Tapestries</a></li>
+					<li><a href="#">Hot Home Decor</a></li>
+					<li><a href="#">Popular Pillows</a></li>
+					<li><a href="#">View all Collections</a></li>
+					<li><a href="#">Art Quarterly No.3.1</a></li>
+					<li><a href="#">Art Quarterly No.3.2 <span>NEW</span></a></li>
+					<li><a href="#">View all Art Quarterlies</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	
+	<div id="main">
+		<div id="imgslide">
+			<ul>
+				<li><a href="#">
+				<img src="images/37245806_8495624_pt.jpg" alt="img1">
+				</a></li>
+				
+			</ul>
+		</div>
+		<div id="middlemenu">
+			<ul>
+				<li><a href="WallTapestries/WallTapestries.html">Tapestries</a></li>
+				<li><a href="#">Posters</a></li>
+				<li><a href="#">iPHONE X Cases</a></li>
+				<li><a href="#">Comforters</a></li>
+				<li><a href="#">Backpacks</a></li>
+				<li><a href="#">Wallpaper</a></li>
+			</ul>
+		</div>
+		
+		<div class="imgsmenu img1">
+			<div class="img1 leftside1">
+				<a href="WallTapestries/WallTapestries.html"><img src="images/37242131_1248570_pt.jpg" alt=""></a>
+				<a href="#"><img src="images/37243353_13023618_pt.jpg" alt=""></a>
+				<a href="#"><img src="images/37242134_13748950_pt.jpg" alt=""></a>
+				<a href="#"><img src="images/37242135_7222956_pt.jpg" alt=""></a>
+			</div>
+			<div class="img1 righttside1">
+				<a href="#"><img src="images/37245172_5771774_pt.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="imgsmenu img2">
+			<a href="#"><img src="images/37242136_1327460_pt.jpg" alt=""></a>
+			<a href="#"><img src="images/37242137_1278995_pt.jpg" alt=""></a>
+			<a href="#"><img src="images/37242138_5040872_pt.jpg" alt=""></a>
+		</div>
+		<div class="imgsmenu img3">
+			<div class="img1 leftside2">
+				<a href="#"><img src="images/37242139_8088388_pt.jpg" alt=""></a>
+			</div>
+			<div class="img1 rightside2">
+				<a href="#"><img src="images/37242155_10486243_pt.jpg" alt=""></a>
+				<a href="#"><img src="images/37244433_2112489_pt.jpg" alt=""></a>
+				<a href="#"><img src="images/37243947_9109009_pt.jpg" alt=""></a>
+				<a href="#"><img src="images/37242140_16425246_pt.jpg" alt=""></a>
+			</div>
+		</div>
+		<div class="imgsmenu img4">
+			<a href="#"><img src="images/37244723_6891009_pt.jpg" alt=""></a>
+			<a href="#"><img src="images/37242142_15461739_pt.jpg" alt=""></a>
+			<a href="#"><img src="images/37242143_11390566_pt.jpg" alt=""></a>
+		</div>
+	</div>
+	<div id="line">
+	</div>
+	<div id="bottommenu">
+		<div class="bmenu bmenu1">
+			<ul>
+				<a href="#"><h5>HELP</h5></a>
+				<li><a href="#">Track My Order</a></li>
+				<li><a href="#">Return My Order</a></li>
+				<li><a href="#">Contact & FAQs</a></li>
+				<li><a href="#">Selling</a></li>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Affiliate Program</a></li>
+				<li><a href="#">Wholesale Program
+				</a></li>
+			</ul>
+			<ul>
+				<a href="#"><h5>SHOP</h4></5>
+				<li><a href="#">Art Prints & Framed Art Prints</a></li>
+				<li><a href="#">Stretched Canvases</a></li>
+				<li><a href="#">iPhone Cases</a></li>
+				<li><a href="#">Laptop Skins & iPhone Skins</a></li>
+				<li><a href="#">T-shirts & Hoodies</a></li>
+				<li><a href="#">Gift Cards</a></li>
+			</ul>
+			<ul>
+				<a href="#"><h5>NEWS & PROMOS</h5></a>
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Collabs</a></li>
+				<li><a href="#">Newsletter</a></li>
+				<li><a href="#">Refer a Friend</a></li>
+			</ul>
+		</div>
+		<div class="bmenu bmenu2">
+			<img src="images/Joinicon.png" alt="">
+		</div>
+		<div class="bmenu bmenu3">
+			<h2><img src="images/ConnectIcon.png" alt=""></h2>
+			<ul>
+				<li><a href="#"><img src="images/FacebookIcon.png" alt=""></a></li>
+				<li><a href="#"><img src="images/TwitterIcon.png" alt=""></a></li>
+				<li><a href="#"><img src="images/InstagramIcon.png" alt=""></a></li>
+				<li><a href="#"><img src="images/PinterestIcon.png" alt=""></a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="footer">
+		<p>© 2018 Society6, LLC. LG Commerce. Some rights reserved. Privacy Policy | Terms of Service</p>
+		<ul>
+			<li><img src="images/PaypalIcon.png" alt=""></li>
+			<li><img src="images/VisaIcon.png" alt=""></li>
+			<li><img src="images/MastercardIcon.png" alt=""></li>
+			<li><img src="images/AmericanExpressIcon.png" alt=""></li>
+			<li><img src="images/DiscoverIcon.png" alt=""></li>
+		</ul>
+	</div>
+	<div id="bottomlogo">
+		<p><em>JOIN, or DIE.</em></p>
+		<img src="images/" alt="">
+	</div>
+
+
+
+	
+</body>
+</html>
