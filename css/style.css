@@ -1,0 +1,389 @@
+*{margin:0;padding:0;}
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,700&subset=cyrillic,latin-ext,vietnamese');
+/*body{font-family: 'Oswald', sans-serif;}*/
+body{font-family: "Work Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;}
+ul,li{list-style:none;}
+a{text-decoration:none;}
+.cf:after{
+	content:"";
+	display:block;
+	clear:both;
+}
+#event{
+	width:100%;
+	height:30px;
+	background-color:#000;
+	color:#fff;
+	text-align:center;
+	font-size:12px;
+	line-height:30px;
+	font-family: "Work Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*header 시작*/
+#headerbg{
+	width:100%;
+	background-color:#f4f4f4;
+}
+#header{
+	width:1200px;
+	height:60px;
+	margin:0 auto;
+	border:1px solid transparent;
+	box-sizing:border-box;
+	position:relative;
+}
+#header h1{
+	float:left;
+	margin-top:10px;
+	margin-left:10px;
+}
+#header h1 img{
+	height:30px;
+	margin-left:10px;
+}
+#header form#search{
+	float:left;
+	line-height:30px;
+	margin-left:20px;
+	margin-right:10px;
+	margin-top:10px;
+}
+#header input{
+	float:left;
+	width:700px;
+	height:35px;
+	border:none;
+	border-radius:5px;
+}
+#header #search img{
+	float:left;
+	margin-left:-45px;
+}
+#haeder ul#lnb{
+	width:500px;
+	height:30px;
+	float:left;
+	position:absolute;
+}
+#header>ul#lnb>li{
+	float:left;
+	height:30px;
+	margin:20px 8px 0;
+}
+#header>ul#lnb>li a img{
+	float:left;
+}
+#header>ul#lnb>li a{
+	display:block;
+	color:#333;
+	font-size:14px;
+}
+#header>ul#lnb>li:nth-child(2) a{
+	border-right:2px solid #D1D1D1;
+	padding-right:10px;
+}
+#header ul#lnb li.admin div#joinlogin{
+	display:none;
+}
+#header ul#lnb li.admin:hover div#joinlogin{
+	display:block;
+}
+#header>ul#lnb>li:hover a{
+	/*border-bottom:1px solid #333;*/
+	text-decoration:underline;
+	/*밑의 border가 아예 딱 붙게는 못하나?
+	text-decoration으로 하면 됨!*/
+}
+
+#header>ul#lnb>li.lnbicon:hover a img{
+	border:none;
+}
+
+
+
+/*gnb 시작*/
+#gnbbg{
+	width:100%;
+	height:40px;
+	background-color:#f4f4f4;
+}
+#gnbbg ul#gnb{
+	width:1200px;
+	height:42px;
+	margin:0 auto;
+	position:relative;
+}
+/*왜 ul이 맨 왼쪽으로 봍지 않는거지?
+background-color를 적용시켰더니 왼쪽으로 안 붙었는데..*/
+
+#gnbbg>ul#gnb>li{
+	float:left;
+	margin-left:10px;
+	height:42px;
+	padding-right:45px;
+	position:relative;
+}
+#gnbbg>ul#gnb>li ul:last-child{
+	padding-right:-50px;
+	/*마지막만 옆으로 찰싹 붙이고 싶을 때?*/
+}
+#gnbbg>ul#gnb>li>a{
+	display:block;
+	height:38px;
+	color:#222;
+	font-size:14px;
+	line-height:35px;
+}
+#gnbbg>ul#gnb>li:hover>a{
+	border-bottom:2px solid red;
+}
+#gnbbg>ul#gnb>li>ul.gnbsub{
+	float:left;
+	width:200px;
+	background-color:#fff;
+	border:1px solid #eee;
+	border-top:none;
+	position:absolute;
+	left:0;
+	display:none;
+}
+#gnbbg>ul#gnb>li:hover>ul.gnbsub{
+	display:block;
+}
+#gnbbg>ul#gnb>li>ul.gnbsub>li{
+	padding:10px 20px;
+}
+#gnbbg>ul#gnb>li>ul.gnbsub>li>a{
+	color:#222;
+	font-size:14px;
+}
+#gnbbg>ul#gnb>li>ul.gnbsub>li:hover>a{
+	border-bottom:1px solid #222;
+}
+#gnbbg>ul#gnb>li>ul.gnbsub>li>a>span{
+	color:white;
+	font-size:11px;
+	padding:1px 3px;
+	background-color:black;
+	border-radius:3px;
+}
+#gnbbg>ul#gnb>li>ul.sub8>li>a,span{
+	text-align:left;
+}
+#gnbbg>ul#gnb>li>ul.sub9>li>a{
+	text-align:left;
+}
+#gnbbg>ul#gnb>li>ul.sub10{
+	position:absolute;
+	right:0px;
+}
+#gnbbg>ul#gnb>li>ul.sub10>li>a{
+	text-align:left;
+}
+
+/*main imgslide시작*/
+#main #imgslide{
+	margin:0 auto;
+	margin-top:40px;
+	width:1000px;
+	height:450px;
+}
+/*main middlemenu 시작*/
+#main #middlemenu{
+	margin-bottom:10px;
+}
+#main #middlemenu ul{
+	width:1000px;
+	margin:0 auto;
+}
+#main #middlemenu ul li{
+	float:left;
+	padding-right:48px;
+}
+#main #middlemenu ul li a{
+	font-family: Georgia,serif;
+	font-size:24px;
+	color:#000;
+	border-bottom:2px solid lightgray;
+}
+#main #middlemenu ul li:hover a{
+	color:hotpink;
+}
+
+/*main imgsmenu 시작*/
+#main .imgsmenu{
+	width:1000px;
+	margin:50px auto 0;
+}
+#main .img1{
+	width:1000px;
+	height:580px;
+}
+#main .imgsmenu .leftside1{
+	float:left;
+	width:720px;
+}
+#main .imgsmenu .leftside1 img{
+	padding:6px;
+}
+#main .imgsmenu .rightside1{
+	float:right;
+	width:180px;
+}
+#main .img2{
+	width:1000px;
+	height:250px;
+	margin:8px auto 0;
+}
+#main .img2 img{
+	padding-right:10px;
+}
+#main .img2 a:nth-child(2) img{
+	padding-left:9px;
+	padding-right:16px;
+}
+#main .img2 a:nth-child(3) img{
+	padding-right:0;
+}
+#main .img3{
+	width:1000px;
+	height:580px;
+	margin-top:60px;
+}
+#main .img3 img{
+	float:left;
+}
+#main .img3 .leftside2{
+	float:left;
+	width:275px;
+}
+#main .img3 .rightside2{
+	float:left;
+	width:720px;
+}
+#main .img3 .rightside2 img{
+	padding:8px;
+}
+#main .img4{
+	width:1000px;
+	height:300px;
+	margin-top:8px;
+}
+#main .img4 img{
+	float:left;
+}
+#main .img4 a:nth-child(2) img{
+	padding:0 21px;
+}
+
+
+#line{
+	clear:both;
+	display:block;
+	width:1000px;
+	height:2px;
+	background-color:lightgray;
+	margin:0 auto 30px;
+}
+
+/*bottom 시작*/
+#bottommenu{
+	width:1000px;
+	height:220px;
+	margin:0 auto;
+}
+#bottommenu .bmenu1{
+	float:left;
+	width:520px;
+	height:200px;
+}
+#bottommenu .bmenu1>ul{
+	float:left;
+	padding-right:40px;
+	padding-top:15px;
+	height:150px;
+}
+#bottommenu .bmenu1 ul h5{
+	color:#bbb;
+	padding-bottom:10px;
+}
+#bottommenu .bmenu1 ul li a{
+	display:block;
+	font-size:12px;
+	color:#000;
+	padding-bottom:8px;
+}
+#bottommenu .bmenu1 ul li:hover a{
+	text-decoration:underline;
+}
+#bottommenu .bmenu2{
+	float:left;
+	width:180px;
+	height:200px;
+}
+#bottommenu .bmenu3{
+	float:left;
+	width:300px;
+	height:200px;
+	position:relative;
+}
+#bottommenu .bmenu3 ul{
+	position:relative;
+}
+#bottommenu .bmenu3 ul li{
+	float:left;
+	position:absolute;
+}
+#bottommenu .bmenu3 ul li:nth-child(2) img{
+	position:absolute;
+	left:70px;
+}
+#bottommenu .bmenu3 ul li:nth-child(3) img{
+	position:absolute;
+	left:140px;
+}
+#bottommenu .bmenu3 ul li:last-child img{
+	position:absolute;
+	left:210px;
+}
+
+/*footer 시작*/
+#footer{
+	width:1000px;
+	height:30px;
+	margin:0 auto;
+}
+#footer p{
+	float:left;
+	width:700px;
+	font-size:12px;
+	color:#aaa;
+	line-height:30px;
+}
+#footer ul{
+	float:right;
+	width:230px;
+}
+#footer ul li img{
+	float:left;
+	height:20px;
+	
+}
+#bottomlogowrap{
+	background-image:url();
+	width:100%;
+	height:25px;
+	background-color:black;
+	margin-top:10px;
+}
+#bottomlogo{
+	width:1000px;
+	height:25px;
+	margin:0 auto;
+}
+#bottomlogo p{
+	color:#fff;
+	font-size:11px;
+	line-height:25px;
+	float:right;
+}

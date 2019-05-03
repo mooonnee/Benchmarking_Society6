@@ -1,0 +1,83 @@
+*{margin:3px;padding:3px}
+
+div#joinlogin{
+	width:300px;
+	height:550px;
+	border:1px solid #bbb;
+	border-top:5px solid #739fb1;
+}
+
+div#join{
+	width:265px;
+	height:150px;
+	margin:15px auto;
+	border:1px solid #bbb;
+}
+div#join span{
+	font-size:16px;
+	display:inline-block;
+	margin-top:7px;
+}
+div#join p{
+	font-size:12px;
+	text-align:left;
+	padding:10px 0;
+}
+div#join .joinbtn{
+	width:250px;
+	height:40px;
+	background-color:black;
+	margin:0 auto;
+	text-align:center;
+}
+div#join .joinbtn a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	line-height:30px;
+}
+div#loginform{
+	width:265px;
+	height:340px;
+	margin:0 auto;
+	border:1px solid #bbb;
+}
+div#loginform .signbtn{
+	width:250px;
+	height:40px;
+	background-color:black;
+	margin:0 auto;
+	text-align:center;
+}
+div#loginform .signbtn a{
+	display:block;
+	color:#fff;
+	text-decoration:none;
+	line-height:30px;
+}
+div#loginform #login input{
+	width:230px;
+	height:30px;
+	border:none;
+	background-color:#eee;
+}
+div#loginform #login p{
+	font-size:12px;
+	color:gray;
+	font-weight:bold;
+	float:left;
+}
+div#loginform #login span{
+	float:right;
+	color:#71afd7;
+	font-size:14px;
+	font-weight:bold;
+}
+div#loginform #login .checkbox input{
+	width:15px;
+	height:15px;
+	background-color:#eee;
+}
+div#loginform #login .checkbox{
+	font-size:12px;
+}
